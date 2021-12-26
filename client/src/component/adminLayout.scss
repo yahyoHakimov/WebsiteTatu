@@ -1,0 +1,237 @@
+.user-name-dropdown {
+  //width: 17px;
+  //height: 20px;
+  //display: inline-block;
+  //mask-repeat: no-repeat;
+  //mask-size: 100%;
+  //mask-position: center;
+  //-webkit-mask-repeat: no-repeat;
+  //-webkit-mask-size: 100%;
+  //-webkit-mask-position: center;
+  //vertical-align: middle;
+  //background-color: #313E47;
+}
+//.logout_button {
+//  width: 17px;
+//  height: 20px;
+//  display: inline-block;
+//  mask-repeat: no-repeat;
+//  mask-size: 100%;
+//  mask-position: center;
+//  -webkit-mask-repeat: no-repeat;
+//  -webkit-mask-size: 100%;
+//  -webkit-mask-position: center;
+//  vertical-align: middle;
+//  background-color: #313E47;
+//}
+
+.icon {
+  width: 17px;
+  height: 22px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: middle;
+  background-color: #313E47;
+
+
+  &.icon-main {
+    mask-image: url("icons/main.svg");
+    -webkit-mask-image: url("icons/main.svg");
+  }
+
+  &.icon-dashboard {
+    mask-image: url("icons/dashboard.svg");
+    -webkit-mask-image: url("icons/dashboard.svg");
+  }
+
+  &.icon-books {
+    mask-image: url("icons/book.svg");
+    -webkit-mask-image: url("icons/book.svg");
+  }
+
+  &.icon-publishes {
+    mask-image: url("icons/publish.svg");
+    -webkit-mask-image: url("icons/publish.svg");
+  }
+
+  &.icon-categories {
+    mask-image: url("icons/categoryies.svg");
+    -webkit-mask-image: url("icons/categoryies.svg");
+  }
+
+  &.icon-writer {
+    mask-image: url("icons/writer.svg");
+    -webkit-mask-image: url("icons/writer.svg");
+  }
+
+  &.icon-orders {
+    mask-image: url("icons/orders.svg");
+    -webkit-mask-image: url("icons/orders.svg");
+  }
+
+  &.icon-teacher {
+    mask-image: url("icons/teacher2.svg");
+    -webkit-mask-image: url("icons/teacher2.svg");
+  }
+
+  &.icon-globus {
+    mask-image: url("icons/address.svg");
+    -webkit-mask-image: url("icons/address.svg");
+  }
+
+  &.icon-customer {
+    mask-image: url("icons/customer.svg");
+    -webkit-mask-image: url("icons/customer.svg");
+  }
+
+  &.icon-payment {
+    mask-image: url("icons/payment.svg");
+    -webkit-mask-image: url("icons/payment.svg");
+  }
+
+  &.icon-time {
+    mask-image: url("icons/time.svg");
+    -webkit-mask-image: url("icons/time.svg");
+  }
+}
+
+.main-layout {
+  width: 100%;
+  position: relative;
+  background-color: #F9FAFB;
+  min-height: 100vh;
+  display: flex;
+  transition: all .3s ease;
+
+  .top-menu {
+    background-color: var(--main-color-2);
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    z-index: 5;
+  }
+}
+
+.main-layout-left {
+  position: relative;
+  width: 300px;
+  min-width: 180px;
+  background-color: #2d3436;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .3s ease;
+  z-index: 2000;
+  font-family: Nunito, sans-serif;
+
+  .main-link-div {
+
+    .main-link-title {
+      color: #777;
+      font-size: .75em;
+      padding: 14px 33px;
+    }
+
+    .active-link, .default-link {
+      display: block;
+      padding: 12px 0 12px 12px;
+      text-decoration: none;
+      font-family: Nunito, sans-serif !important;
+      letter-spacing: .5px;
+
+
+      .icon {
+        background-color: #999898;
+        margin: 0 20px;
+      }
+
+      .main-link {
+        color: #eee;
+        text-decoration: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #4d5758;
+      }
+
+      .icon {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    .active-link {
+      background-color: #343b3d;
+      border-left: 5px solid var(--main-color-2);
+
+      &:hover {
+        background-color: #343b3d;
+        cursor: pointer;
+      }
+
+      .main-link {
+        color: #CECDCD;
+      }
+    }
+
+  }
+
+
+}
+
+.main-layout-right {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+  padding-top: 100px;
+  z-index: 1;
+  padding-left: 20px;
+
+  .menu-toggle {
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 15px 20px 15px 15px;
+    border-radius: 0 40px 40px 0;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    z-index: 10;
+    left: 300px;
+    cursor: pointer;
+
+    span {
+      background-color: #4d5758;
+      transform: rotate(45deg);
+    }
+
+    &.l-0 {
+      left: 0;
+    }
+  }
+
+}
+
+//Tablet
+@media screen and (max-width: 768px) {
+}
+
+
+//MOBILE
+@media screen and (max-width: 576px) {
+
+}
+
+
+
+

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url("../../resources/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+body {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    font-family: "PoppinsRegular";
+}
+.loginPage {
+    overflow: hidden;
+    background-image: url("../../component/images/dan-formsma--9SsJ2jHnkg-unsplash (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container-fluid {
+    padding: 0 !important;
+}
+.registration {
+    padding: 50px 10px;
+    margin: 6% 0;
+    width: 600px;
+    max-width: 48%;
+    box-shadow: 0 8px 32px 0 rgba(65, 177, 121, 0.37);
+    border-radius: 5px;
+    background-color: #7494b3;
+}
+.registration h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #FFD200;
+}
+.firstInputs Label {
+    color: #FFD200;
+}
+/*.form-control:focus{*/
+/*    box-shadow: none!important;*/
+/*}*/
+.login-input:focus{
+    box-shadow: none!important;
+    border-bottom-color: #FFD200 !important;
+}
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+/*!*.login-input:-webkit-autofill*!*/
+/*{*/
+/*    -webkit-text-fill-color: #fff !important;*/
+/*}*/
+
+.btn-sign-in {
+    background-color: #FFD200;
+}
+.btn-sign-in:hover {
+    background-color: #dcaf00;
+}
